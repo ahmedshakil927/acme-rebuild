@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACME Laboratories</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="wrap topbarRow">
+    <a class="brand" href="index.html">
+      <span class="brandMark" aria-hidden="true"></span>
+      <span class="brandName">ACME Laboratories</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="navItem active" href="index.html">Home</a>
+      <a class="navItem" href="labs.html">Labs</a>
+      <a class="navItem" href="tutorials.html">Tutorials</a>
+      <a class="navItem" href="toys.html">Toys</a>
+      <a class="navItem" href="news.html">News</a>
+      <a class="navItem" href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO (Banner)-->
+  <section class="hero">
+    <div class="wrap heroGrid">
+      <div>
+        <p class="eyebrow">ACME Labs</p>
+
+        <h1 class="heroTitle">
+          Explore tools, demos<br />
+          and resources in one place
+        </h1>
+
+        <p class="heroSubtitle">
+          Quick access to key ACME pages — organised into clear categories for easier browsing.
+        </p>
+
+        <div class="heroCtas">
+          <a class="btn btnPrimary" href="labs.html">Explore Labs</a>
+          <a class="btn btnGhost" href="tutorials.html">View Tutorials</a>
+        </div>
+
+        <!--  SEARCH (IMPORTANT STRUCTURE) -->
+        <div class="searchWrap">
+          <div class="searchBox">
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Search (e.g., mapper, canvas, labs)..."
+              aria-label="Search ACME content"
+              autocomplete="off"
+            />
+          </div>
+
+          <!-- dropdown results -->
+          <div id="searchResults" class="searchResults" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <!-- Illustration -->
+      <div class="illusCard">
+        <svg class="illus" viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration">
+          <rect x="20" y="30" width="290" height="190" rx="16" fill="rgba(255,255,255,0.07)"/>
+          <rect x="45" y="60" width="240" height="16" rx="8" fill="rgba(255,255,255,0.10)"/>
+          <rect x="45" y="92" width="200" height="12" rx="6" fill="rgba(255,255,255,0.08)"/>
+          <rect x="45" y="118" width="230" height="12" rx="6" fill="rgba(255,255,255,0.08)"/>
+
+          <rect x="330" y="55" width="170" height="215" rx="18" fill="rgba(255,255,255,0.06)"/>
+          <rect x="352" y="82" width="126" height="18" rx="9" fill="rgba(126,217,87,0.55)"/>
+          <rect x="352" y="118" width="126" height="12" rx="6" fill="rgba(255,255,255,0.08)"/>
+          <rect x="352" y="142" width="110" height="12" rx="6" fill="rgba(255,255,255,0.08)"/>
+          <rect x="352" y="166" width="94" height="12" rx="6" fill="rgba(255,255,255,0.08)"/>
+
+          <rect x="70" y="240" width="210" height="95" rx="18" fill="rgba(255,255,255,0.06)"/>
+          <rect x="92" y="270" width="166" height="12" rx="6" fill="rgba(255,255,255,0.08)"/>
+          <rect x="92" y="294" width="120" height="12" rx="6" fill="rgba(255,255,255,0.08)"/>
+
+          <circle cx="468" cy="295" r="34" fill="rgba(126,217,87,0.20)"/>
+          <circle cx="468" cy="295" r="18" fill="rgba(126,217,87,0.55)"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="heroWedge" aria-hidden="true"></div>
+  </section>
+
+  <!-- FEATURED -->
+  <section class="section">
+    <p class="sectionEyebrow">Featured</p>
+    <h2 class="sectionTitle">Popular pages</h2>
+
+    <div class="wrap">
+      <div class="grid4">
+        <a class="card cardLink" href="https://acme.com/mapper/" target="_blank" rel="noopener noreferrer">
+          <h3 class="cardTitle">ACME Mapper</h3>
+          <p class="cardText">Interactive mapping tool collection.</p>
+        </a>
+
+        <a class="card cardLink" href="https://acme.com/canvas/" target="_blank" rel="noopener noreferrer">
+          <h3 class="cardTitle">HTML5 Canvas</h3>
+          <p class="cardText">Learning resources and demos.</p>
+        </a>
+
+        <a class="card cardLink" href="https://acme.com/planimeter/" target="_blank" rel="noopener noreferrer">
+          <h3 class="cardTitle">ACME Planimeter</h3>
+          <p class="cardText">Measure areas and paths.</p>
+        </a>
+
+        <a class="card cardLink" href="https://acme.com/micro_httpd/" target="_blank" rel="noopener noreferrer">
+          <h3 class="cardTitle">micro_httpd</h3>
+          <p class="cardText">Minimal HTTP server utility.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section">
+    <p class="sectionEyebrow">Browse</p>
+    <h2 class="sectionTitle">Categories</h2>
+
+    <div class="wrap">
+      <div class="grid3">
+        <a class="card cardLink catCard" href="labs.html">
+          <div class="catTop">
+            <div class="catBig">Labs</div>
+            <span class="pill">Tools</span>
+          </div>
+          <ul class="catList">
+            <li>Mapper, Planimeter</li>
+            <li>Servers & utilities</li>
+            <li>Experiments & projects</li>
+          </ul>
+        </a>
+
+        <a class="card cardLink catCard" href="tutorials.html">
+          <div class="catTop">
+            <div class="catBig">Tutorials</div>
+            <span class="pill">Learning</span>
+          </div>
+          <ul class="catList">
+            <li>HTML5 Canvas</li>
+            <li>Web API demos</li>
+            <li>Reference resources</li>
+          </ul>
+        </a>
+
+        <a class="card cardLink catCard" href="toys.html">
+          <div class="catTop">
+            <div class="catBig">Toys</div>
+            <span class="pill">Fun</span>
+          </div>
+          <ul class="catList">
+            <li>License Maker</li>
+            <li>Heart Maker</li>
+            <li>Other amusements</li>
+          </ul>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footerRow">Group 20</div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
